@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+function myFunction() {
+  document.getElementById("registerForm").reset();
+}
+</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="cssnboot/7form.css">
+	<title>Register</title>
+
+</head>
+<body>
+
+	<form action="success.html" id="registerForm">
+		
+			<fieldset>
+				<legend>Your Address</legend>
+				<table>
+				<tr>
+				<th>
+				<label for="fnam">First name</label>
+				</th>
+				<th>
+				<input type="text" name="fname" id="fnam">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="lnam">Last name</label>
+				</th>
+				<th>
+				<input type="text" name="lname" id="lnam">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="st">Street</label>
+				</th>
+				<th>
+				<input type="text" name="st" id="st">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="city">City</label>
+				</th>
+				<th>
+				<input type="text" name="city" id="city">
+				</th>
+				</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Additional details</legend>
+				<table>
+				<tr>
+				<th>
+				<label for="Bio">Biogaphy</label>
+				</th>
+				<th>
+				<textarea id="Biogaphy" rows="2" cols="20"></textarea>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="addimg">Image</label>
+				</th>
+				<th>
+				<input type="file" name="addimg" id="addimg" accept="image/*">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="ag">Age group</label>
+				</th>
+				<th>
+				<input list="group" name="group">
+				<datalist id="group">
+    			<option value="0 to 9 Years">
+    			<option value="10 to 25 Years">
+    			<option value="26 to 50 Years">
+    			<option value="50 to 100 Years">
+  				</datalist>
+				</th>
+				</tr>
+				</table>
+			</fieldset>
+			<fieldset>
+				<legend>Interests</legend>
+				<table>
+				<tr>
+				<th>
+				<label for="hob">Hobbies</label>
+				</th>
+				<th>
+				<select id="hob" name="hob" size="4" multiple>
+    			<option value="soccer">Soccer</option>
+    			<option value="Dancing">Dancing</option>
+    			<option value="Coding">Codding</option>
+    			<option value="Like Movies">Like Moves</option>
+  				</select>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="car">Favourite Car?</label>
+				</th>
+				<th>
+				<input list="car" name="car">
+				<datalist id="car">
+    			<option value="BMW">
+    			<option value="Volvo">
+    			<option value="Bugati">
+    			<option value="Thar">
+  				</datalist>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="transpot">Favourite Public Tansport?</label>
+				</th>
+				<th>
+				<select id="ground" name="ground" size="3" multiple>
+				<optgroup label="Ground">
+					<option value="Train">Train</option>
+    				<option value="Bus">Bus</option>
+				</optgroup>
+    			<optgroup label="Water">
+    				<option value="Boat">Boat</option>
+    				<option value="Kaya">Kaya</option>
+    			</optgroup>
+  				</select>
+				</th>
+				</tr>
+				</table>
+			</fieldset>
+			<center>
+				<input type="submit" name="submit" value="Submit">
+				<input type="button" onclick="myFunction()" value="Reset form">
+			</center>
+	
+	</form>
+
+</body>
+</html>
