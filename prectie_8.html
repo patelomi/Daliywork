@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		function validateForm() {
+  let fname = document.forms["data"]["fname"].value;
+  let lname = document.forms["data"]["lname"].value;
+  let dob = document.forms["data"]["dob"].value;
+  let gender = document.forms["data"]["gender"].value;
+  let email = document.forms["data"]["email"].value;
+  let pass = document.forms["data"]["pass"].value;
+  let repass = document.forms["data"]["repass"].value;
+
+  if (fname == "" || fname == null) {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (lname == "" || lname == null) {
+    alert("Last Name must");
+    return false;
+  }
+  if (dob == "" || dob == null) {
+    alert("Date of birth must");
+    return false;
+  }
+  if (gender == "" || gender == null) {
+    alert("Gernder must");
+    return false;
+  }
+  if (pass == "" || pass == null) {
+    alert("Password must");
+    return false;
+  }
+  if (repass == "" || repass == null) {
+    alert("Re-Password must");
+    return false;
+  }
+  if (pass!=repass){
+  	alert("Enter Correct Password")
+  	return false;
+  }
+  		}
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>personamInformetion</title>
+</head>
+<body>
+<form name="data" id="informetion" method="post" onsubmit="return validateForm()">
+	<table>
+		<tr>
+			<h3>Personal Informetion</h3>
+				<th>
+					
+				<label for="fname">First name</label>
+				</th>
+				<th>
+				<input type="text" name="fname" id="fname">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="lnam">Last name</label>
+				</th>
+				<th>
+				<input type="text" name="lname" id="lnam">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="dob">Date of Birth</label>
+				</th>
+				<th>
+				<input type="date" name="dob" id="dob">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="gender">Gender</label>
+				</th>
+				<th>
+				<input list="gender" name="gender">
+				<datalist id="gender"> 
+    			<option value="Male">Male</option>
+    			<option value="Femal">Femal</option>
+    			</datalist>
+  				</select>
+				</th>
+				</tr>
+				<tr><th>
+					<h3>Accout Informetion</h3>
+				</th></tr>
+				
+				<th>
+				<label for="email">Email</label>
+				</th>
+				<th>
+				<input type="email" name="email" id="email">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="reemail">Re-type Email</label>
+				</th>
+				<th>
+				<input type="email" name="reemail" id="reemail">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="pass">Password</label>
+				</th>
+				<th>
+				<input type="password" name="pass" id="pass">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="repass">Re-type Password</label>
+				</th>
+				<th>
+				<input type="password" name="repass" id="repass">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="securityQ">Security Question</label>
+				</th>
+				<th>
+				<input list="Question" name="Question">
+				<datalist id="Question">
+				<option value="what?">
+				<option value="way?">
+				<option value="How?">	
+				</datalist>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="sAns">Security Answer</label>
+				</th>
+				<th>
+				<input type="text" name="sAns" id="sAns">
+				</th>
+				</tr>
+				<tr><th>
+					<h3>Contect Informetion</h3>
+				</th></tr>
+				
+				<th>
+				<label for="address">Adderss</label>
+				</th>
+				<th>
+				<input type="text" name="address" id="address">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="city">City</label>
+				</th>
+				<th>
+				<input type="text" name="city" id="city">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="state">State</label>
+				</th>
+				<th>
+				<input list="state" name="state">
+				<datalist id="state">
+				<option value="Ahemdabad">
+				<option value="Baroda">	
+				<option value="Rajkot">
+				</datalist>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="zipCod">Zip Code</label>
+				</th>
+				<th>
+				<input type="text" name="zipCod" id="zipCod">
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<label for="phone">Phone No</label>
+				</th>
+				<th>
+				<input type="text" name="phone" id="phone">
+				</th>
+				</tr>
+				
+	</table>
+
+				<center>
+				<input type="submit" name="submit" value="Submit">
+				<input type="button" onclick="veliForm()" value="Reset form">
+			</center>
+				
+</form>
+</body>
+</html>
