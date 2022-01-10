@@ -1,0 +1,78 @@
+What Are Data Structures:-
+
+->data stuctures:storing a data in a differnt way.
+ex.we can store a list of items having the same data-type using the array data structure.
+
+Algorithm:-
+
+->Well-defined sequence of steps to solve a problem.
+->Procedure for solving a problem, with special focus on solving problems 
+using a computer.
+ex.There are two type of algo Searching and shoring
+
+Arry:-
+we can say like one box has manay particions is called an arry.
+->if we lost a data we can eazyly find the data with arry.
+
+
+link list:-
+
+->storeing a collection of items.
+->it is devided in to many boxes and each box has different data and link to the other box.
+->box can contain eany datatype.
+->head is the first data.
+->end box of next is alwas null in sigali list.
+->dynamic 
+ex
+Previous and next page in web browser – We can access previous and next url searched in web browser by pressing back and next button since, they are linked as linked list.
+
+An Overview of Arrays and Memory:-
+
+->memory:-it is temp data storage.
+long tape of data.
+
+->storage:-it is permenent data storage.
+
+Class:-
+->Class is a user-defined datatype that contain its own data members and member functions.
+->The member functions and data members can be accessed with the help of objects.
+
+ex.class Dog{
+	public member
+	privat member
+};
+
+Object:-
+->Is a collection of var and funtions.
+->Object can be created many times as per requirement.
+
+ex.class Car{
+	int no=5;
+
+	public static void main(String[] args)
+	Car BMW =new Car();
+	System.out.println(BMW.no);
+}
+
+constuctor:-
+->is it like an method.
+two type:
+1.default
+class Car{
+Car(){
+	System.out.println("BMW");
+}
+public static void main(String args[])
+{
+	Car b=new Car();
+}
+}
+}
+2.paramitrie
+
+Big O notetion:-
+->the notetion o(n) is the formal/mathemetical way to express the worst caseof the algo running time.
+
+recursion:-
+->a way of slolving the pro by haveing a function it's self
+	
