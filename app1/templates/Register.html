@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<form action="/RegisterData/">
+			Enter User Name:-<input type="text" name="unm"><br>
+			Enter Password:-<input type="password" name="pass"><br>
+			<select name="id">
+				{% for singleCourse in data %}
+					<option value="{{singleCourse.c_no}}">{{singleCourse.c_name}}</option>
+				{% endfor %}
+			</select>
+			<input type="submit" name="Login">
+		</form>
+	</body>
+</html>
+s
